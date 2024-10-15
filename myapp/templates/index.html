@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <img src="{% static 'image/image.jpg' %}" alt="ME">
+            <h2>Anis uma</h2>
+            <p class="description">"Newbie Coder"</p>
+            <p class="InInterest">Interest: Nature, Space</p>
+            <p class="InSpecialities">Specialities: Imagination </p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Narathiwat, Thailand</p>
+            <div class="contact">
+                <a href="" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                <a href="" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <h1>Project</h1>
+        <div class="boxpr">
+            
+            <div class="card">
+                <h2>Book Club</h2>
+                <img src="{% static 'image/bookS.jpg' %}" alt="ProjectB">
+                <p>It is a website that allows us to find information about the desired books.</p>
+            </div>
+            <div class="card">
+                <h2>AuroClick</h2>
+                <img src="{% static 'image/autoclick.jpg' %}" alt="">
+                <p>Python code that when run will click as planned and reference the stored image file.</p>
+            </div>
+            <div class="card">
+                <h2>Cooming..</h2>
+                <p>Comming...</p>
+            </div>
+        </div>
+        <hr>
+        <h1>Skill</h1>
+        <div class="boxskill">
+           <div class="skillC">
+             <h1>HTML</h1>
+           </div>
+           <div class="skillC">
+            <h1>CSS</h1>
+          </div>
+          <div class="skillC">
+            <h1>JS</h1>
+          </div>
+          <div class="skillC">
+            <h1>PYTHON</h1>
+          </div>
+          
+        </div>
+        <hr>
+
+        <form action="/submit-form" method="POST" class="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+          </form>
+
+
+          <footer>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+          </footer>
+          
+          
+
+
+        </div>
+        
+            
+        </div>
+        
+    
+        <script src="scripts.js"></script>
+    
+</body>
+</html>
